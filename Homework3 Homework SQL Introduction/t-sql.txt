@@ -1,0 +1,1 @@
+T-SQL е добавка за SQL създадена от Microsoft и Sybase.

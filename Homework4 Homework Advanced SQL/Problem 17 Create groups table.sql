@@ -1,0 +1,7 @@
+CREATE TABLE Groups 
+(
+  GroupID INT IDENTITY,
+  GroupName NVARCHAR(10) NOT NULL,
+  CONSTRAINT PK_Groups PRIMARY KEY(GroupID),
+  CONSTRAINT UNQ_Groups UNIQUE(GroupName)
+)
