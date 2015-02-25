@@ -1,0 +1,45 @@
+
+ use chatroom
+
+ db.createCollection('messages');
+
+ var SomeMessages =
+     [{
+         text: "Heloooooo",
+         date: new Date(ISODate().getTime()),
+         isRead: true,
+         user: {
+             username: "Green",
+             fullName: "OnqOnev",
+             website: "onq.com"
+         }
+     }, {
+         text: "Hellooooo, from me",
+         date: new Date(ISODate().getTime() + 1000 * 60 * 1),
+         isRead: true,
+         user: {
+             username: "otherGuy",
+             fullName: "Bai Georgi",
+             website: "BatGeorgi.bg"
+         }
+     }, {
+         text: "Hmmm good",
+         date: new Date(ISODate().getTime() + 1000 * 60 * 2),
+         isRead: true,
+         user: {
+             username: "Green",
+             fullName: "OnqOnev",
+             website: "onq.com"
+         }
+     }, {
+         text: "YEEEEEAH",
+         date: new Date(ISODate().getTime() + 1000 * 60 * 1),
+         isRead: false,
+          user: {
+             username: "otherGuy",
+             fullName: "Bai Georgi",
+             website: "BatGeorgi.bg"
+         }
+     }];
+
+ db.messages.insert(SomeMessages);
